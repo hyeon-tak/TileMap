@@ -21,7 +21,9 @@ public class TopDownShooting : MonoBehaviour
     void Start()
     {
         _controller.OnAttackEvent += OnShoot;
-        _controller.OnLookEvent += OnAim; 
+        _controller.OnLookEvent += OnAim;
+
+        
     }
     private void OnAim(Vector2 newAimDirection)
     {
@@ -36,10 +38,12 @@ public class TopDownShooting : MonoBehaviour
     {
         Instantiate(testPrefab, projectileSpawnPosition.position, Quaternion.identity);
     }
+    
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
 }

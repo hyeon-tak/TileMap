@@ -52,22 +52,4 @@ public class TopDownCharacterController : MonoBehaviour
 
 
 }
-//{
-//    //[SerializeField] public float speed = 5f;
 
-
-//    void Start()
-//    {
-        
-
-
-//    }
-
-//    void Update()
-//    {
-//        //float x = Input.GetAxisRaw("Horizontal");
-//        //float y = Input.GetAxisRaw("Vertical");
-
-//        //transform.position += new Vector3(x, y) * speed * Time.deltaTime;
-//    }
-//}
