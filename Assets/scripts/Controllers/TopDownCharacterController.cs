@@ -9,6 +9,9 @@ public class TopDownCharacterController : MonoBehaviour
     public event Action<Vector2> OnMoveEvent;
     public event Action<Vector2> OnLookEvent;
     public event Action OnAttackEvent;
+    public GameObject FirstFloor;
+    public GameObject SecondFloor;
+
 
     private float _timeSinceLastAttack = float.MaxValue;
     protected bool IsAttacking { get; set; }
@@ -50,6 +53,6 @@ public class TopDownCharacterController : MonoBehaviour
         OnAttackEvent?.Invoke();
     }
 
-
+  
 }
 
